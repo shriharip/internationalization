@@ -1,0 +1,34 @@
+{
+    "demoPage": {
+        "title": "Titre de ma Page",
+        "buttons": {
+            "french": "Français",
+            "english": "English",
+            "selectDate": "Sélectionner une date"
+        },
+        "tests": {
+            "string_values": "Je m'appelle {{name}} et j'habite en {{country}}.",
+            "string_plural": {
+                "=0": "je n'ai pas d'enfant",
+                "=1": "j'ai un enfant",
+                ">1": "j'ai plusieurs enfants"
+            },
+            "string_gender": {
+                "male": "Je suis un homme",
+                "female": "Je suis une femme",
+                "other": "Non mentionné"
+            },
+            "string_gender_values": {
+                "male": "Je suis un homme de {{size}}",
+                "female": "Je suis une femme de {{size}}",
+                "other": "Non mentionné"
+            }
+        },
+        "values": {
+            "my_country": "Belgique"
+        }
+    },
+    "page2": {
+        "title": "Titre page 2"
+    }
+}

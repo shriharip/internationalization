@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:internationalization/blocs/bloc_provider.dart';
-import 'package:internationalization/blocs/translations_bloc.dart';
+import 'package:internationalization/provider/translations_provider.dart';
 import 'package:internationalization/utils/global_translations.dart';
+import 'package:provider/provider.dart';
 
 class DemoPage extends StatelessWidget {
+  final Translations trans;
+  DemoPage(this.trans);
+  
   @override
   Widget build(BuildContext context) {
     //
     // Retrieves the BLoC that handles the changes to the current language
     //
-    final TranslationsBloc translationsBloc =
-        BlocProvider.of<TranslationsBloc>(context);
-
+    
     //
     // Retrieves the title of the page, from the translations
     //
     final String pageTitle = allTranslations.text("demoPage.title");
-
     //
     // Retrieves the caption of the button
     //
@@ -51,7 +51,7 @@ class DemoPage extends StatelessWidget {
                 //
                 // Switch the working language
                 //
-                translationsBloc.setNewLanguage(otherLanguage);
+                trans.setNewLanguage(otherLanguage);
               },
             ),
 
