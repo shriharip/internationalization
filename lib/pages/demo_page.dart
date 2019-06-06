@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:internationalization/provider/translations_provider.dart';
+import 'package:internationalization/providers/translations_provider.dart';
 import 'package:internationalization/utils/global_translations.dart';
-import 'package:provider/provider.dart';
+
 
 class DemoPage extends StatelessWidget {
   final Translations trans;

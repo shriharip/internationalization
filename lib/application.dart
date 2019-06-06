@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:internationalization/provider/translations_provider.dart';
+import 'package:internationalization/providers/translations_provider.dart';
 import 'package:internationalization/pages/demo_page.dart';
 import 'package:internationalization/utils/global_translations.dart';
 
